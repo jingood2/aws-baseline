@@ -3,8 +3,13 @@ stack-set: password-policy
 #all-accounts: false
 max-concurrent-percentage: 100
 accounts:
-  - 037729278610
-  - 751659651428
+  - 457258694188 
+  - 765243622341 
+  - 512758715856
+  - 185302376606
+  - 518471655024
+  - 763718361067
+  - 010382790647
 regions:
   - ap-northeast-2
 region: ap-northeast-2

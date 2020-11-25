@@ -13,8 +13,13 @@
                 'AwsSupportUser',
                 'AwsSystemAdministrator'] %}
 
-{% set AWSSubAccounts = [ {'Name': 'Master', 'Id': '037729278610'}, 
-                          { 'Name': 'Sub1', 'Id':'751659651428' },
+{% set AWSSubAccounts = [ {'Name': 'shared', 'Id': '037729278610'}, 
+                          { 'Name': 'log', 'Id':'765243622341' },
+                          { 'Name': 'sales', 'Id':'763718361067' },
+                          { 'Name': 'analysis', 'Id':'512758715856' },
+                          { 'Name': 'erp', 'Id':'185302376606' },
+                          { 'Name': 'hr', 'Id':'518471655024' },
+                          { 'Name': 'gw', 'Id':'457258694188' }
                           ] %}
 
 Resources:

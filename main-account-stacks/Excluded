@@ -1,4 +1,5 @@
 # Add Directories that should be excluded. One per line, no empty lines
+01-auditing
 02-budget
 04-service-control-policies
 05-validate-stack-set-deployments
