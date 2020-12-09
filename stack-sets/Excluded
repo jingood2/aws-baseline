@@ -1,9 +1,5 @@
 # Add Directories that should be excluded. One per line, no empty lines
 00-test-example
 01-stack-set-execution-role
-04-guardduty-main
-05-guardduty-member
-06-auditing-configuration
-07-config-rules
 08-vpc
 09-security-hub

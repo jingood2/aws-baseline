@@ -4,8 +4,12 @@ capabilities:
 main-account-parameter: true
 all-subaccounts: false
 accounts:
-  - 751659651428
-  - 037729278610
+  - 010382790647
+  - 457258694188 
+  - 512758715856
+  - 185302376606
+  - 518471655024
+  - 763718361067
 max-concurrent-percentage: 100
 regions:
   - ap-northeast-2
@@ -17,4 +21,4 @@ tags:
 #  DisabledIdentitiesServices:
 #    - iam
 parameters:
-  MainAccount: 037729278610 
+  MainAccount: 010382790647 

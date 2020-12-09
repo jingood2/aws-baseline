@@ -1,4 +1,9 @@
-{% set SubAccountIds = ['037729278610', '751659651428'] %}
+{% set SubAccountIds = ['010382790647', 
+                        '457258694188', 
+                        '512758715856',
+                        '185302376606',
+                        '518471655024',
+                        '763718361067'] %}
 Parameters:
   ConfigBucketPrefix:
     Type: String
@@ -53,6 +58,6 @@ Resources:
           AwsRegions:
             - ap-northeast-2
           AllAwsRegions: false
-      ConfigurationAggregatorName: AtclConfigurationAggregator
+      ConfigurationAggregatorName: SkMagicConfigurationAggregator
 
   

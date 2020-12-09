@@ -1,8 +1,12 @@
 stack-set: config-rules
 all-accounts: false
 accounts:
-  - 037729278610
-  - 751659651428
+  - 010382790647
+  - 457258694188
+  - 512758715856
+  - 185302376606
+  - 518471655024
+  - 763718361067
 all-regions: true
 excluded-regions:
   - eu-north-1

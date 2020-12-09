@@ -11,7 +11,9 @@
                 'AwsDatabaseAdministrator',
                 'AwsSecurityAudit',
                 'AwsSupportUser',
-                'AwsSystemAdministrator'] %}
+                'AwsSystemAdministrator',
+                'SkmgDeveloper' 
+                ] %}
 
 {% set AWSSubAccounts = [ {'Name': 'shared', 'Id': '037729278610'}, 
                           { 'Name': 'log', 'Id':'765243622341' },

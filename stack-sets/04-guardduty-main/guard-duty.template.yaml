@@ -1,5 +1,11 @@
 {% set AWSSubAccounts = [ 
-                          { 'Id': '751659651428', 'Email': 'jingood2+sub1@gmail.com'},] %}
+
+                          { 'Id': '763718361067', 'Email': 'skmagic_it05@skmagic.com'},
+                          { 'Id': '185302376606', 'Email': 'skmagic_it06@skmagic.com'},
+                          { 'Id': '518471655024', 'Email': 'skmagic_it07@skmagic.com'},
+                          { 'Id': '457258694188', 'Email': 'skmagic_it08@skmagic.com'},
+                          { 'Id': '512758715856', 'Email': 'skmagic_it09@skmagic.com'},
+                          ] %}
 
 Resources:
   GuardDutyDetector:

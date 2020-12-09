@@ -260,6 +260,16 @@ Resources:
       RoleName: AssumableOperationsRole
     Type: AWS::IAM::Role
 
+  AssumableSkmgDeveloperRole:
+    Properties:
+      MaxSessionDuration: !Ref MaxSessionDuration
+      AssumeRolePolicyDocument: {% include 'policy-statements/assumable-role-policy-document.json'%}
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+      RoleName: AssumableSkmgDeveloperRole
+    Type: AWS::IAM::Role
+
 Outputs:
   AssumableAdminRoleArn:
     Value: !GetAtt AssumableAdminRole.Arn
@@ -330,3 +340,8 @@ Outputs:
     Value: !GetAtt AssumableAwsSecurityAuditRole.Arn
     Export:
       Name: !Sub ${ExportPrefix}:AssumableAwsSecurityAuditRoleArn
+
+  AssumableSkmgDeveloperRoleArn:
+    Value: !GetAtt AssumableSkmgDeveloperRole.Arn
+    Export:
+      Name: !Sub ${ExportPrefix}:AssumableSkmgDeveloperRoleArn
