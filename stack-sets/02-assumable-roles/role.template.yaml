@@ -260,6 +260,15 @@ Resources:
       RoleName: AssumableOperationsRole
     Type: AWS::IAM::Role
 
+  EC2ImageBuilderDistributionCrossAccountRole:
+    Properties:
+      MaxSessionDuration: !Ref MaxSessionDuration
+      AssumeRolePolicyDocument: {% include 'policy-statements/assumable-role-policy-document.json'%}
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/Ec2ImageBuilderCrossAccountDistributionAccess
+      RoleName: EC2ImageBuilderDistributionCrossAccountRole
+    Type: AWS::IAM::Role
+
   AssumableSkmgDeveloperRole:
     Properties:
       MaxSessionDuration: !Ref MaxSessionDuration
