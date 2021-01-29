@@ -3,12 +3,13 @@ capabilities:
   - CAPABILITY_IAM
 #all-accounts: false
 accounts:
-  - 268875736166
-  - 206924800932
-  - 815637454826
-all-regions: false
-excluded-regions:
-  - eu-north-1
+  - 037729278610
+  - 751659651428
+#all-regions: false
+#excluded-regions:
+#  - eu-north-1
+regions:
+  - ap-northeast-2
 main-account-parameter: true
 max-concurrent-percentage: 100
 region: ap-northeast-2
