@@ -25,6 +25,8 @@ Resources:
                 Rules:
                   - Name: suffix
                     Value: json.gz
+      VersioningConfiguration:
+        Status: Enabled
 
   CloudTrailBucketPolicy:
     Type: AWS::S3::BucketPolicy
@@ -50,7 +52,15 @@ Resources:
             Condition:
               StringEquals:
                 s3:x-amz-acl: bucket-owner-full-control
-
+          - Sid: DenyAuditingStorageDelete
+            Effect: Deny
+            Principal: '*'
+            Action:
+              - 's3:Delete*'
+            Resource: !Sub ${CloudTrailBucket.Arn}/*
+            Condition:
+              ArnNotLike:
+                'aws:PrincipalARN': !Sub 'arn:aws:iam::${AWS::AccountId}:group/admin/CAREFUL_DANGEROUS_AdminMasterAccountGroup'
 
   AthenaSearch:
     From: CloudTrail-Athena
