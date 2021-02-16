@@ -3,6 +3,7 @@ capabilities:
   - CAPABILITY_IAM
 #all-accounts: false
 accounts:
+<<<<<<< HEAD
   - 010382790647
   - 457258694188 
   - 512758715856
@@ -12,6 +13,15 @@ accounts:
 all-regions: false
 excluded-regions:
   - eu-north-1
+=======
+  - 037729278610
+  - 751659651428
+#all-regions: false
+#excluded-regions:
+#  - eu-north-1
+regions:
+  - ap-northeast-2
+>>>>>>> jingood0604
 main-account-parameter: true
 max-concurrent-percentage: 100
 region: ap-northeast-2
