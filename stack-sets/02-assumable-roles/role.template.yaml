@@ -44,6 +44,17 @@ Resources:
       AssumeRolePolicyDocument: {% include 'policy-statements/assumable-role-policy-document.json'%}
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/ReadOnlyAccess
+      Policies:   
+        - PolicyName: SSMSessionOperation
+          PolicyDocument:
+            Version: '2008-10-17'
+            Statement:
+              - Sid: SSMSessionOperation
+                Effect: Allow
+                Action:
+                  - 'ssm:*'
+                Resource:
+                  - '*'
       RoleName: AssumableReadOnlyRole
     Type: AWS::IAM::Role
 
