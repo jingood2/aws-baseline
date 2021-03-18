@@ -44,7 +44,8 @@ Resources:
       AssumeRolePolicyDocument: {% include 'policy-statements/assumable-role-policy-document.json'%}
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/ReadOnlyAccess
-      - PolicyName: SSMSessionOperation
+      Policies:   
+        - PolicyName: SSMSessionOperation
           PolicyDocument:
             Version: '2008-10-17'
             Statement:
