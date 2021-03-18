@@ -61,7 +61,7 @@ ENABLED_REGIONS='ap-northeast-2'
 INPUT_FILE='member.csv'
 
 enablesecurityhub:
-	/app/scripts/securityhub/enablesecurityhub.py --master_account ${ACCOUNT_ID} --enabled_regions ${ENABLED_REGIONS} --enable_standards ${CIS_STANDARD_ARN} --assume_role ManageSecurityHubRole ${INPUT_FILE} 
+	/app/scripts/securityhub/enablesecurityhub.py --master_account ${ACCOUNT_ID} --enabled_regions ${ENABLED_REGIONS} --assume_role ManageSecurityHubRole ${INPUT_FILE} 
 
 disablesecurityhub:
 	/app/scripts/securityhub/disablesecurityhub.py --master_account ${ACCOUNT_ID} --enabled_regions ${ENABLED_REGIONS} --assume_role ManageSecurityHubRole ${INPUT_FILE}
